@@ -49,39 +49,53 @@ different categories based on some aspect of the comment.
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
-
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
-
 ### `label_one`
 
-**Definition:**
+**Definition:** If a comment defends google's actions in some shape or form classify it as 'Support'.
 
 **Example 1:**
->
+> A court ordered subpoena would require all these email sites to share information to the government. If Proton was hit with a subpoena and didn’t respond, they would be liable.
 
 **Example 2:**
->
+> Uh, Google responded to a legal order. Tuta and Proton will do the exact same if they have no other choice.
 
 ### `label_two`
 
-**Definition:**
+**Definition:** If a comment provides advice on what a user or anyone should do classify it as 'Advice'.
 
 **Example 1:**
->
+> Poooh, nas/server, mailcow, and a domain name is my to go solution. Not for the faint of heart to set up, but worth wile
 
 **Example 2:**
->
+> Switching providers doesn't make you subpoena-proof, it just changes what can be handed over. Google can be compelled by a US warrant directly. Proton is Swiss, so the US has to go through a mutual legal assistance treaty and a Swiss court order, and Proton publishes how many of those it gets in its transparency report. And they do comply when the order is legally binding. In 2021 they logged a French activist's IP under a Swiss order, and in 2024 they handed over a recovery email to Swiss authorities in a Spanish case. The difference is your inbox. Proton's zero-access encryption means they literally can't read or hand over your email contents, only metadata like IPs, recovery info, and who you emailed. If you're switching for privacy, the real move is end-to-end encryption plus not attaching a personal recovery email or phone number, because no provider can refuse a valid court order.
+
+### `label_three`
+
+**Definition:** If a comment is questioning the legitmacy of the post in some way classify it as 'Suspicious'.
+
+**Example 1:**
+> This e-mail is clearly a scam. So many red flags. Main red flag is the signature. Google is not an LLC it's a corporation. Most likely a C-Corp. LLC's are usually smaller companies. I really hope you didn't click any links. Use G-Mail or don't. A lot of professional companies do because of the security features of their paid service. The company I work for uses gmail.
+
+**Example 2:**
+> Google does not notify you if the FBI has a subpeona or warrant to get any material data from them about you. If you actually got this letter, it is a hoax.
+
+### `label_four`
+
+**Definition:** If a comment provides no worthwhile contribution label it as 'Worthless'.
+
+**Example 1:**
+> Oh yeah, it never happened to me, but as soon as i saw this happening to someone else a year ago, i immediately stopped using gmail important and started minding about privacy
+
+**Example 2:**
+> Let's just start with the obvious. If you're up to anything remotely questionable from a legal perspective. Using freemail services is a dumb idea.
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** 'Advice' & 'Support'
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+If a post supports google's action but still provide an alternative method to communication
+label it as 'Advice'.
 
 
 
