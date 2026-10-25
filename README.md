@@ -39,9 +39,10 @@
 
 ## What This Does
 
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
-
+I chose reddit as the platform and r/degoogle as the subreddit. I picked a recent and
+popular post that I think is somewhat controversial. Each post is an individual 
+comment and replies will not be included. The classifier will sorts each post into 
+different categories based on some aspect of the comment.
 
 
 ---
@@ -91,7 +92,7 @@
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Reddit: https://www.reddit.com/r/degoogle/comments/1x8d0u2/i_think_this_is_a_wakeup_call_for_anyone_still_on/?sort=controversial
 
 **How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
