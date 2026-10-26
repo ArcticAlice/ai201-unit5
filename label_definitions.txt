@@ -1,6 +1,6 @@
-support: If a comment defends google's actions in some shape or form
+support: If a comment defends google's actions in some way shape or form
 
-advice: If a comment provides advice on what a user or anyone should do
+advice: If a comment provides advice on what action a user or anyone else should do
 
 suspicious: If a comment is questioning the legitmacy of the post in some way
 

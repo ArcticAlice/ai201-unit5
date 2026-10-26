@@ -53,61 +53,61 @@ whether you hit them:
 
 ## 1.
 
-<!-- Your criterion. It must name a number. -->
-
-
+The label 'support' must come out to be about .45 in the classification result.
 
 **Why this target:**
 
-
+People saying google had no choice or that any company would do the same was the 
+most common type of comment in the post. 
 
 ---
 
 ## 2.
 
-<!-- Your criterion. -->
-
-
+Every label that questioned the legitimacy should come be classified as 'suspicious'
+.95 of the time.
 
 **Why this target:**
 
-
+People calling out the legitimacy of the post was rare. There were only a few 
+people who thought the email was a fake or a scam. I think this type of comment
+is the most distinct and easiest to classify so that's why the number is so high.
 
 ---
 
 ## 3.
 
-<!-- Your criterion. -->
-
-
+When a post supports google's actions but still tells users to find alternative 
+services the classification result should come out be .70 for 'advice'.
 
 **Why this target:**
 
-
+These comments are the most consistent edge cases in the post. If they don't get 
+classified as 'advice' the label 'support' would show up too often.
 
 ---
 
 ## 4.
 
-<!-- Your criterion. -->
-
-
+The label 'worthless' shoud come out to be .10 in the classification result.
 
 **Why this target:**
 
-
+There were several comments that provided a personal story that did not see
+relevant or at least worth mentioning. There were also comments that just seemed
+to be hate and provided nothing relevant. This label was the least common type
+of comment. 
 
 ---
 
 ## 5.
 
-<!-- Your criterion. -->
-
-
+The label 'advice' should come out to be .35 in the classification result.
 
 **Why this target:**
 
-
+This was the second most popular type of comment in the posts. It was less than
+'support' but also significantly more than than the other two labels.
 
 ---
 
