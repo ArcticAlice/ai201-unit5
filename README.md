@@ -97,28 +97,23 @@ different categories based on some aspect of the comment.
 If a post supports google's action but still provide an alternative method to communication
 label it as 'Advice'.
 
-
-
 ---
 
 ## The Dataset
 
-<!-- Where you collected from, how you labelled, your counts, and three hard
-     cases. -->
-
 **Where the posts came from:** Reddit: https://www.reddit.com/r/degoogle/comments/1x8d0u2/i_think_this_is_a_wakeup_call_for_anyone_still_on/?sort=controversial
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** I labelled the first 44 comments cold by hand without assistance (marked `cold` in the note column). The remaining 156 comments were pre-labelled with AI using my taxonomy definitions and hardest boundary decision rule, and then reviewed and checked (marked `pre-labelled, checked`).
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| worthless | 98 | 49.0% |
+| support | 46 | 23.0% |
+| advice | 34 | 17.0% |
+| suspicious | 22 | 11.0% |
+| **Total** | 200 | 100% |
 
 **Three hard cases**
 
@@ -127,24 +122,27 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 **1.**
 > *The post:*
->
+> I wouldn't trust anything located in Germany anymore not with the current government. Mailbox.org which is also located there has been revealed to read your emails when they deem it necessary
 > *Could have been:*
->
+> The tag could have been 'Support'.
 > *I chose, because:*
+> I chose advice because the post isn't defending google's action and while it isn't giving advice on what the user shold do they are telling why their choice may not work. 
 
 **2.**
 > *The post:*
->
+> What the fuck is wrong with people? "Wah I did a crime and Google weported me wah"
 > *Could have been:*
->
+> The tag could have been 'Worthless'.
 > *I chose, because:*
+> I chose 'Support' because even though the tone is harsh internet mockery, it substantively rejects blame against Google and defends their action as a justified response to a crime rather than corporate misconduct.
 
 **3.**
 > *The post:*
->
+> This is any email service. Don't use email for anything sensitive.
 > *Could have been:*
->
+> The tag could have been 'Support'.
 > *I chose, because:*
+> I chose 'Advice' because although the first sentence defends Google/email providers by stating this applies to everyone, the post still provides an alternative rule/guideline for communication, matching my hardest boundary decision rule.
 
 ---
 
