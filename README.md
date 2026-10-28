@@ -148,17 +148,28 @@ label it as 'Advice'.
 
 ## The Training Run
 
-<!-- Your starting model, your settings, and anything you changed and why. -->
+**Base model:** `distilbert-base-uncased`
 
-**Base model:**
-
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:**
+- Hardware Device: `mps` (Apple Silicon GPU)
+- PyTorch Version: `2.14.1`
+- Epochs: 3
+- Learning Rate: 2e-5
+- Batch Size: 16
+- Max Length: 128
+- Seed: 42
 
 **Anything I changed from the defaults, and why:**
+None. I kept all default hyperparameters (3 epochs, lr 2e-5, batch size 16, max length 128, seed 42) to establish a clean, standard baseline fine-tuning run on `distilbert-base-uncased` before experimenting with any tuning in Unit 6.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:**
+- Stratified 70/15/15 split: Train: 139, Val: 31, Test: 30 (Total: 200)
+- Per-label counts in test split:
+  - `worthless`: 15
+  - `support`: 7
+  - `advice`: 5
+  - `suspicious`: 3
+- *Note on thin classes:* `support` (7), `advice` (5), and `suspicious` (3) each have fewer than 8 examples in the test split, which means per-label test metrics (especially for `suspicious`) will be sensitive to individual misclassifications and can fluctuate across seeds.
 
 
 
