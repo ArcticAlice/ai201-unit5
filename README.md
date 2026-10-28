@@ -177,26 +177,20 @@ None. I kept all default hyperparameters (3 epochs, lr 2e-5, batch size 16, max 
 
 ## How I Used AI
 
-<!-- Two specific moments — what you asked, what came back, what you changed.
-
-     ⚠️ Plus disclosure of any pre-labelling. If you had a model pre-label a
-     batch and then read and corrected every one, say that. It's an allowed
-     workflow and disclosing it costs you nothing. Not disclosing it is the
-     problem. -->
-
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Assistance pre-labeling a batch of 156 unlabeled Reddit comments from the thread according to my taxonomy definitions (`support`, `advice`, `suspicious`, `worthless`) and my hardest boundary decision rule.
+- *What came back:* Candidate label suggestions across all four categories, along with an initial distribution breakdown and a flagged list of ambiguous edge cases where comments combined multiple traits (such as advice embedded within scam warnings or aggressive snark that substantively defended Google).
+- *What I changed:* I reviewed and verified the suggested labels against the taxonomy definitions, manually adjusted borderline classifications (e.g. enforcing the explicit hardest boundary rule that classifies comments defending email services as `advice` if they provide alternative communication guidance), updated their notes to `pre-labelled, checked`, and preserved my original 44 cold-labeled examples untouched.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* A Python script to collect 200 public comments from a controversial Reddit thread on r/degoogle using Reddit's endpoints/parsers.
+- *What came back:* An initial script designed to fetch only top-level comments, handle rate limits with pacing delays and backoff on HTTP 429/5xx errors, strip [deleted], [removed], and AutoModerator bot comments, and output RFC 4180-compliant CSV with untruncated text. However, the thread only yielded 162 unique readable top-level comments, leaving the dataset short of the 200 required rows.
+- *What I changed:* I modified the collection architecture to introduce a Top-Level Priority & Single-Reply Cap mechanism: the script prioritizes all 162 unique top-level comments (parent_id / depth 0), and then backfills the remaining 38 comments using direct replies under the strict constraint of at most 1 reply per comment. This maintained post independence while safely reaching the required 200-row dataset floor.
 
 **Pre-labelling disclosure:**
+I labeled the first 44 comments cold by hand without any AI assistance (marked `cold` in the `note` column). For the remaining 156 comments, I used AI to generate initial pre-labels based strictly on my label definitions and hardest boundary decision rule, and then manually reviewed, checked, and adjusted every single row (marked `pre-labelled, checked`).
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
